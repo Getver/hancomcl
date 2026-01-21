@@ -1,0 +1,38 @@
+Antibody escape/Antigenicity	Virulence increased	Transmissibility/Infectivity increased	ACE2 binding increase	ACE2 binding decrease	Tissue tropism Neuroinvasion	Fusogenicity increased	Fusogenicity decrease	Syncytium formation	mink infection	Increased fitness	Increased Endosomal entery pathway/decreased cell surface entry pathways/Increased fitness	Caco2 adaptation	URT preference	MAbs therapeutic escape	Vaccine escape
+A67V	T19R	V83A	G339H	S375F	D614G	V83A	V83A	H69-	G142D	D614G	H655Y	S217P	Q376R	P330S	G838S
+H69-	N440K	V143-	N440K	K417N		R346T	S375F	V70-	N501Y			F248L	Y392H	S494A	D843G
+V70-	K444T	Y144-	L452R	G446S		P681R	T547K					N358S	T408P		K854M
+T95I	Q493R	S375F	S477N				D796Y					C686G	Q540R		T866A
+G142D	P681R	N460K	T478K				N856K					K854N			B911A
+V143-		D614G	E484A				N969K					C963W			
+Y144-			Q493R									I1148T			
+N211I			G496S												
+L212I			Q498R												
+G339D			N501Y												
+G339H															
+R346T															
+L368I															
+S371F															
+S371L															
+S373P															
+S375F															
+D405N															
+R408S															
+K417N															
+N440K															
+K444T															
+V445P															
+G446S															
+L452R															
+N460K															
+S477N															
+T478K															
+E484A															
+F486S															
+F486V															
+F490S															
+Q493R															
+G496S															
+Q498R															
+N501Y															
+Y505H															
