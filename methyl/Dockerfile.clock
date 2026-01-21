@@ -1,0 +1,115 @@
+## 제일 최신꺼임(Dockerfile_4.4.1 고대로 가져온거)
+## docker run --rm -it -v ${PWD}:/home/data test:latest
+ARG BASE_IMAGE=rocker/r-ver
+ARG amd64_tag=4.4.1
+
+FROM ${BASE_IMAGE}:${amd64_tag} AS base-amd64
+# This will persist in final image
+ENV BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=TRUE
+
+# Set automatically when building with --platform
+ARG TARGETARCH
+ENV TARGETARCH=${TARGETARCH:-amd64}
+FROM base-$TARGETARCH AS base
+
+## Set Dockerfile version number
+ARG BIOCONDUCTOR_VERSION=3.19
+
+##### IMPORTANT ########
+## The PATCH version number should be incremented each time
+## there is a change in the Dockerfile.
+ARG BIOCONDUCTOR_PATCH=32
+
+ARG BIOCONDUCTOR_DOCKER_VERSION=${BIOCONDUCTOR_VERSION}.${BIOCONDUCTOR_PATCH}
+
+## Do not use binary repositories during container creation
+## Avoid using binaries produced for older version of same container
+ENV BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE
+
+RUN apt-get update && apt-get install -y git wget && \
+    apt-get clean all && apt-get purge && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
+
+RUN git clone https://github.com/Bioconductor/bioconductor_docker.git && cp /bioconductor_docker/bioc_scripts/install_bioc_sysdeps.sh /tmp/ && \
+    rm -rf /bioconductor_docker
+
+RUN set -e
+# RUN BIOC_VERSION=${1:-"3.21"}
+RUN export DEBIAN_FRONTEND=noninteractive
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends apt-utils \
+    && apt-get install -y --no-install-recommends gdb libxml2-dev python3-pip libz-dev liblzma-dev libbz2-dev libpng-dev libgit2-dev \
+    && apt-get install -y --no-install-recommends pkg-config fortran77-compiler byacc automake curl cmake \
+    && apt-get install -y --no-install-recommends libpcre2-dev libnetcdf-dev libhdf5-serial-dev libfftw3-dev libopenbabel-dev libopenmpi-dev libxt-dev libudunits2-dev libgeos-dev libproj-dev libcairo2-dev libtiff5-dev libreadline-dev libgsl0-dev libgslcblas0 libgtk2.0-dev libgl1-mesa-dev libglu1-mesa-dev libgmp3-dev libhdf5-dev libncurses-dev libxpm-dev liblapack-dev libv8-dev libgtkmm-2.4-dev libmpfr-dev libmodule-build-perl libapparmor-dev libprotoc-dev librdf0-dev libmagick++-dev libsasl2-dev libpoppler-cpp-dev libprotobuf-dev libpq-dev libarchive-dev coinor-libcgl-dev coinor-libsymphony-dev coinor-libsymphony-doc libpoppler-glib-dev \
+    && apt-get install -y --no-install-recommends libperl-dev libarchive-extract-perl libfile-copy-recursive-perl libcgi-pm-perl libdbi-perl libdbd-mysql-perl libxml-simple-perl \
+    && apt-get install -y --no-install-recommends libglpk-dev libeigen3-dev liblz4-dev \
+    && apt-get install -y --no-install-recommends sqlite3 openmpi-bin mpi-default-bin openmpi-common openmpi-doc tcl8.6-dev tk-dev default-jdk imagemagick tabix ggobi graphviz protobuf-compiler jags libhiredis-dev \
+    && apt-get install -y --no-install-recommends xfonts-100dpi xfonts-75dpi biber libsbml5-dev libzmq3-dev python3-dev python3-venv \
+    && apt-get -y --no-install-recommends install libmariadb-dev-compat libjpeg-dev libjpeg-turbo8-dev libjpeg8-dev libavfilter-dev libfuse-dev mono-runtime ocl-icd-opencl-dev
+RUN pip3 install scikit-learn pandas pyyaml
+RUN apt-get install -y --no-install-recommends libgdal-dev default-libmysqlclient-dev libmysqlclient-dev
+RUN Rscript -e 'install.packages("BiocManager", repos="https://cran.rstudio.com")' 
+RUN Rscript -e "BiocManager::install(version='3.19', update=TRUE, ask=FALSE)" 
+RUN Rscript -e "BiocManager::install(c('devtools'))" 
+RUN Rscript -e 'BiocManager::install("preprocessCore", configure.args = c(preprocessCore = "--disable-threading"), update=TRUE, force=TRUE, ask=FALSE, type="source")'
+RUN apt-get clean \
+    && apt-get autoremove -y \
+    && apt-get autoclean -y \
+    && rm -rf /var/lib/apt/lists/*
+
+# RUN bash /tmp/install_bioc_sysdeps.sh $BIOCONDUCTOR_VERSION \
+RUN echo "R_LIBS=/usr/local/lib/R/host-site-library:\${R_LIBS}" > /usr/local/lib/R/etc/Renviron.site \
+    && curl -OL http://bioconductor.org/checkResults/devel/bioc-LATEST/Renviron.bioc \
+    && sed -i '/^IS_BIOC_BUILD_MACHINE/d' Renviron.bioc \
+    && cat Renviron.bioc | grep -o '^[^#]*' | sed 's/export //g' >>/etc/environment \
+    && cat Renviron.bioc >> /usr/local/lib/R/etc/Renviron.site \
+    && echo BIOCONDUCTOR_VERSION=${BIOCONDUCTOR_VERSION} >> /usr/local/lib/R/etc/Renviron.site \
+    && echo BIOCONDUCTOR_DOCKER_VERSION=${BIOCONDUCTOR_DOCKER_VERSION} >> /usr/local/lib/R/etc/Renviron.site \
+    && echo 'LIBSBML_CFLAGS="-I/usr/include"' >> /usr/local/lib/R/etc/Renviron.site \
+    && echo 'LIBSBML_LIBS="-lsbml"' >> /usr/local/lib/R/etc/Renviron.site \
+    && rm -rf Renviron.bioc \
+    && sed -i 's/-Werror=format-security/-Wformat-security/g' /usr/local/lib/R/etc/Makeconf
+
+ARG TARGETARCH
+ENV TARGETARCH=${TARGETARCH:-amd64}
+
+FROM base-$TARGETARCH AS final
+COPY --from=base / /
+
+LABEL name="bioconductor/bioconductor_docker" \
+      version=$BIOCONDUCTOR_DOCKER_VERSION \
+      url="https://github.com/Bioconductor/bioconductor_docker" \
+      vendor="Bioconductor Project" \
+      maintainer="maintainer@bioconductor.org" \
+      description="Bioconductor docker image with system dependencies to install all packages." \
+      license="Artistic-2.0"
+
+# Reset args in last layer
+ARG BIOCONDUCTOR_VERSION=3.19
+ARG BIOCONDUCTOR_PATCH=32
+ARG BIOCONDUCTOR_DOCKER_VERSION=${BIOCONDUCTOR_VERSION}.${BIOCONDUCTOR_PATCH}
+
+# Set automatically when building with --platform
+ARG TARGETPLATFORM
+ENV TARGETPLATFORM=${TARGETPLATFORM:-linux/amd64}
+ARG DEBIAN_FRONTEND=noninteractive
+
+## Set env variables
+ENV PLATFORM=${TARGETPLATFORM}
+ENV LIBSBML_CFLAGS="-I/usr/include"
+ENV LIBSBML_LIBS="-lsbml"
+ENV BIOCONDUCTOR_DOCKER_VERSION=$BIOCONDUCTOR_DOCKER_VERSION
+ENV BIOCONDUCTOR_VERSION=$BIOCONDUCTOR_VERSION
+ENV BIOCONDUCTOR_NAME="bioconductor_docker"
+
+RUN R -e 'install.packages(c("DT", "RPMM", "prettydoc", "Hmisc", "kpmt", "doParallel", "ggplot2", "shinythemes", "plotly", "dendextend", "combinat", "fastICA", "JADE"))'
+RUN R -e 'BiocManager::install(c("minfi", "minfiData", "DMRcate", "IlluminaHumanMethylationEPICmanifest", "Illumina450ProbeVariants.db", "IlluminaHumanMethylationEPICanno.ilm10b4.hg19", "globaltest", "sva", "DNAcopy", "impute", "marray", "wateRmelon", "goseq", "missMethyl", "isva", "qvalue", "BeadSorted.Saliva.EPIC", "bigmelon", "conumee", "FlowSorted.Blood.450k", "FlowSorted.Blood.EPIC", "FlowSorted.CordBlood.450k", "FlowSorted.CordBloodCombined.450k", "FlowSorted.CordBloodNorway.450k", "FlowSorted.DLPFC.450k", "IlluminaHumanMethylation27kanno.ilmn12.hg19", "IlluminaHumanMethylation27kmanifest", "IlluminaHumanMethylation450kanno.ilmn12.hg19", "IlluminaHumanMethylation450kmanifest", "IlluminaHumanMethylationEPICanno.ilm10b2.hg19", "IlluminaHumanMethylationEPICanno.ilm10b3.hg19", "IlluminaHumanMethylationEPICv2anno.20a1.hg38", "IlluminaHumanMethylationEPICv2manifest", "methylationArrayAnalysis", "methylumi", "minfiDataEPIC", "REMP", "ExperimentHubData", "planet"))'
+RUN R -e 'install.packages(c("PerformanceAnalytics", "ggpmisc", "tidyverse", "ggpubr", "dynamicTreeCut"))'
+
+WORKDIR /usr/local/src
+
+
+# ENTRYPOINT [ "bash", "/home/files/entrypoint.sh" ]
+# CMD [ "${sample_sheet}", "${platform}" ]
+CMD [ "/bin/bash" ]
+
+# COPY ./gwas_data.txt /home/files
