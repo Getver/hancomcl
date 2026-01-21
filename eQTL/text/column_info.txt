@@ -1,0 +1,11 @@
+CHR	The chromosome where the SNP or gene is located. DNA is packaged into chromosomes that contain genetic material.
+BP	The base pair position on the chromosome (hg38 reference genome).
+SNP	Reference SNP ID (rsID) for the variant tested in the eQTL analysis.
+REF	The allele present in the reference genome at this position.
+ALT	The variant allele observed at this position, differing from the reference.
+GENE	The gene whose expression is tested for association with the SNP.
+DISTANCE	Distance between the SNP and the transcription start site (TSS) of the associated gene. Can be 0 if within the gene.
+SLOPE	Effect size (regression coefficient) showing how the SNP allele affects gene expression.
+p-value	Significance of the SNP-gene expression association. Lower values indicate stronger evidence.
+FDR	Adjusted p-value accounting for multiple testing (False Discovery Rate).
+VIEW	Links/icons to external webpages for the SNP or gene.

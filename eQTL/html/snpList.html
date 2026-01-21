@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eQTL Portal</title>
+  <link rel="stylesheet" href="../css/snpList.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="page-container">
+    <!-- Header -->
+    <header class="page-header">
+      <a href="main.html" class="title-header">eQTL Portal</a>
+      <div class="header-banner">
+        <img src="../image/banner.png" alt="Banner">
+      </div>
+    </header>
+
+    <main class="main-container">
+      <!-- Breadcrumbs -->
+      <nav class="breadcrumbs">
+        <a href="main.html">
+          <img src="../image/home.png" alt="Home Icon" class="db-icon">
+        </a>
+        <a href="menu.html" class="breadcrumb-link">＞ eQTL Database</a>
+      </nav>
+
+      <!-- Top controls -->
+      <div class="top-controls">
+        <button class="csv-button" id="download-csv">
+          <img src="../image/download.png" alt="Download CSV" class="csv-icon">CSV
+        </button>
+        <div class="search-bar">
+          <img src="../image/search.png" alt="Search icon" class="search-icon">
+          <input type="text" id="quick-search" placeholder="Quick Search (SNP, Gene)">
+        </div>
+      </div>
+
+      <!-- Filters -->
+      <aside class="filters-panel">
+        <h2>
+          Filters
+          <img src="../image/reset.png" alt="Reset icon" class="reset-icon" id="reset-filters">
+        </h2>
+        <form id="filter-form">
+          <div class="filter-group">
+            <label for="gene_id">Gene</label>
+            <input type="text" id="gene_id" name="gene_id" placeholder="ex. TP53, BRAF1">
+          </div>
+          <div class="filter-group">
+            <label for="snp_id">SNP</label>
+            <input type="text" id="snp_id" name="snp_id" placeholder="rsID">
+          </div>
+          <div class="filter-group">
+            <label for="distance">Distance</label>
+            <input type="number" id="distance" name="distance">
+          </div>
+          <div class="filter-group">
+            <label>P-value</label>
+            <div class="range-input">
+              <input type="number" id="pval_min" name="pval_min" placeholder="0">
+              <span>-</span>
+              <input type="number" id="pval_max" name="pval_max" placeholder="0.05">
+            </div>
+          </div>
+          <div class="filter-group">
+            <label>FDR</label>
+            <div class="range-input">
+              <input type="number" id="fdr_min" name="fdr_min" placeholder="0">
+              <span>-</span>
+              <input type="number" id="fdr_max" name="fdr_max" placeholder="0.05">
+            </div>
+          </div>
+          <button type="submit" class="search-action-button">SEARCH</button>
+        </form>
+      </aside>
+
+      <!-- Data table -->
+      <div class="data-section">
+        <section class="data-table">
+          <table class="results-table">
+            <thead id="data-table-head"></thead>  <!-- JS가 채움 -->
+            <tbody id="data-table-body"></tbody>  <!-- JS가 채움 -->
+          </table>
+        </section>
+        <div id="pagination-controls" class="pagination-container"></div>
+      </div>
+    </main>
+  </div>
+  <script src="../script/snpList.js"></script>
+</body>
+</html>

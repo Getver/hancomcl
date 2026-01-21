@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korea LCL eQTL Database</title>
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+<body>
+
+    <div class="page-container">
+        <div class="background-image">
+            <img src="../image/DNA.png" alt="DNA helix background illustration" />
+        </div>
+        <main class="content-area">
+            <h1 class="page-title">Korea LCL eQTL Database</h1>
+            <p class="description" id="description">Loading...</p>
+            <a href="menu.html" class="cta-button">
+                <span class="text-black">eQTL</span>
+                <span class="text-blue"> Database</span>
+            </a>
+        </main>
+        <aside class="statistics-card">
+            <header class="card-header">Statistics</header>
+            <div class="card-content">
+                <div class="stat-item">
+                    <img src="../image/Gene.png" alt="Gene Icon" />
+                    <div class="stat-text">
+                        <span class="label">Gene</span><br>
+                        <!-- <span class="value">12,075</span> -->
+                        <span class="value" id="stat-gene">0</span>
+                    </div>
+                </div>
+                <hr />
+                <div class="stat-item">
+                    <img src="../image/SNP.png" alt="SNP Icon" />
+                    <div class="stat-text">
+                        <span class="label">SNP</span><br>
+                        <span class="value" id="stat-snp">0</span>
+                    </div>
+                </div>
+                <hr />
+                <div class="stat-item">
+                    <img src="../image/LCL.png" alt="Type Icon" />
+                    <div class="stat-text">
+                        <span class="label">Type</span><br>
+                        <span class="value">LCL</span>
+                    </div>
+                </div>
+                <hr />
+                <div class="stat-item">
+                    <img src="../image/File.png" alt="File Icon" />
+                    <div class="stat-text">
+                        <span class="label">eQTL</span><br>
+                        <span class="value" id="stat-eqtl">0</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script>
+    fetch('../text/main_text.txt')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('description').textContent = data;
+        })
+        .catch(err => {
+            document.getElementById('description').textContent = 'Failed to load description.';
+            console.error(err);
+        });
+
+    // Gene 카운트 불러오기
+    // 통계 값 불러오기
+    fetch('/api/stats')
+        .then(res => res.json())
+        .then(data => {
+            document.getElementById('stat-gene').textContent = data.genes.toLocaleString();
+            document.getElementById('stat-snp').textContent  = data.snps.toLocaleString();
+            document.getElementById('stat-eqtl').textContent = data.eqtls.toLocaleString();
+        })
+        .catch(err => console.error("Error loading stats:", err));
+
+
+
+    </script>
+</body>
+</html>

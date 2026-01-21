@@ -1,0 +1,134 @@
+/* :root -> CSS 변수 선언 영역
+  컬러, 간격, 폰트 크기 등을 변수로 만들어두면
+  웹사이트 전체의 디자인을 일관되게 관리하고 변경하기 쉽습니다.
+*/
+:root {
+    --primary-color: #092686;
+    --text-color: #313131;
+    --text-light-color: rgba(52, 52, 52, 0.75);
+    --border-color: #ccc;
+    --background-color: white;
+    --card-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    
+    /* 공통 여백 값을 변수로 사용 */
+    --content-padding-left: 200px;
+    /* --content-padding-top: 100px; */
+    --spacing-unit: 1rem; /* 16px */
+
+    /* 공통 border-radius 값 */
+    --border-radius-card: 20px;
+    --border-radius-img: 15px;
+    --border-radius-btn: 10px;
+}
+
+/* --- 기본 레이아웃 및 페이지 설정 --- */
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; /* 모던한 기본 폰트 설정 */
+}
+
+.page-container {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: var(--content-padding-left); /* 왼쪽 여백을 page-container에서 관리 */
+    box-sizing: border-box;
+}
+
+/* --- 헤더 (타이틀, 구분선) --- */
+.portal-header {
+    padding-top: 100px;
+}
+
+.title-header {
+    display: inline-block; /* 너비가 콘텐츠에 맞게 조절되도록 변경 */
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-color);
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.custom-hr {
+    width: 1100px;
+    margin: 0; /* page-container의 여백을 따르도록 초기화 */
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 2px solid var(--border-color);
+}
+
+/* --- 섹션 공통 스타일 --- */
+.sample-section {
+    margin-bottom: calc(var(--spacing-unit) * 3);
+}
+
+.section-header {
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-top: 20px;
+    margin-bottom: var(--spacing-unit);
+}
+
+/* --- 카드 컨테이너 및 카드 스타일 --- */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* 카드 사이의 간격 */
+}
+
+.card {
+    flex: 1 1 220px; /* 가변 너비, 기본 220px. 한 줄에 4~5개 자동 배치 */
+    max-width: 240px; /* 카드의 최대 너비 제한 */
+    background: var(--background-color);
+    box-shadow: var(--card-shadow);
+    border-radius: var(--border-radius-card);
+    padding: calc(var(--spacing-unit) * 0.8);
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* 부드러운 전환 효과 */
+}
+
+/* 카드에 마우스를 올렸을 때 효과 */
+.card:hover {
+    transform: translateY(-5px); /* 살짝 위로 이동 */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-img);
+}
+
+.card-info {
+    margin-top: calc(var(--spacing-unit) * 0.5);
+}
+
+.card-info .name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.card-info .count {
+    font-size: 1rem;
+    color: var(--text-light-color);
+    display: block; /* 위아래 간격을 주기 위해 block 요소로 변경 */
+    margin: 5px 0;
+}
+
+.card-info button {
+    margin-top: calc(var(--spacing-unit) * 0.5);
+    padding: 0.5rem 1rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius-btn);
+    cursor: pointer;
+    transition: background-color 0.2s ease; /* 부드러운 색상 전환 효과 */
+}
+
+/* 버튼에 마우스를 올렸을 때 효과 */
+.card-info button:hover {
+    background-color: #061F68; /* 살짝 어두운 색으로 변경 */
+}
