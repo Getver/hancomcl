@@ -1,0 +1,99 @@
+FROM quay.io/qiime2/amplicon:2025.7
+
+RUN apt-get update && apt-get install -y unzip
+
+# RUN conda install -c bioconda ete3 pyqt pyside2 biopython matplotlib
+# RUN conda install -c conda-forge -c bioconda q2-empress biopython -y
+
+WORKDIR /work/tool/
+
+RUN wget https://github.com/marbl/Krona/releases/download/v2.8.1/KronaTools-2.8.1.tar && \
+    tar -xvf KronaTools-2.8.1.tar && \
+    cd KronaTools-2.8.1 && \
+    ./install.pl && \
+    ./updateTaxonomy.sh
+
+
+# RUN git clone https://github.com/SegataLab/lefse.git /work/tool/lefse && \
+#     mkdir -p /work/tool/lefse/lefse && \
+#     cp -r /work/tool/lefse/lefse/* /work/tool/lefse/ && \
+#     cd /work/tool/lefse
+
+
+RUN wget https://github.com/picrust/picrust2/archive/v2.5.1.tar.gz && \
+    tar xvzf  v2.5.1.tar.gz 
+
+RUN conda install -c bioconda epa-ng gappa -y
+
+RUN cd /work/tool/picrust2-2.5.1 && pip install -e .
+
+
+RUN R -e 'install.packages(c("BiocManager", "tidyverse"), repos="http://cran.rstudio.com/")'
+RUN R -e "BiocManager::install(c('ANCOMBC', 'phyloseq'))"
+RUN R -e 'install.packages("castor", repos="https://cloud.r-project.org")'
+
+
+# apt-get update
+# apt-get install -y build-essential
+# pip install --upgrade pip
+# pip install empress
+
+# if (!requireNamespace("BiocManager", quietly=TRUE)) install.packages("BiocManager")
+# if (!require("ANCOMBC")) BiocManager::install("ANCOMBC")
+# if (!require("phyloseq")) BiocManager::install("phyloseq")
+# if (!require("tidyverse")) install.packages("tidyverse") # 결과 정리에 필요
+# install.packages("BiocManager")
+
+
+
+# BiocManager::install("ALDEx2")
+
+
+# RUN R -e "install.packages(c('mvtnorm', 'MASS', 'survival', 'coin', 'ALDEx2'), repos='https://cloud.r-project.org')"
+# RUN R -e "install.packages('https://cran.r-project.org/src/contrib/Archive/modeltools/modeltools_0.2-23.tar.gz', repos=NULL, type='source')"
+
+# sudo apt-get update
+# sudo apt-get install -y \
+#     libfreetype6-dev \
+#     libharfbuzz-dev \
+#     libfribidi-dev \
+#     libpng-dev \
+#     libtiff5-dev \
+#     libjpeg-dev \
+#     libwebp-dev \
+#     pkg-config
+# conda install -c conda-forge r-cairo r-systemfonts r-ragg r-devtools
+# conda install -c conda-forge cairo libpng pkg-config freetype harfbuzz fribidi
+# conda install -c conda-forge freetype harfbuzz fribidi pkg-config
+# conda install -c conda-forge freetype harfbuzz fribidi libpng libtiff libjpeg webp pkg-config
+
+
+
+
+# if (!requireNamespace("BiocManager", quietly = TRUE))
+#     install.packages("BiocManager")
+
+# BiocManager::install("ALDEx2")
+
+
+
+# 필요한 추가 설정이나 파일 복사 가능
+RUN mkdir -p /work/DB && mkdir /work/module
+
+COPY docker/module/ /work/module/
+COPY docker/DB/ /work/DB/
+COPY docker/script/ /work/script/
+COPY docker/info/ /work/info/
+
+WORKDIR /home/data
+
+
+# sm:qiime_0.1
+# docker run --rm -it -v /disk0/sm/microbiome/16S/docker/DB:/work/DB -v /disk0/sm/reference/ncbi:/work/ncbi -v ${PWD}:/home/data -v /disk0/sm/microbiome/16S/ERR/fastq:/work/raw_data -e META_DATA=/disk0/sm/microbiome/16S/ERR4/file_list.tsv sm:qiime_0.1
+# docker run --rm -it -v /disk0/sm/microbiome/16S/docker/DB:/work/DB -v /disk0/sm/reference/ncbi:/work/ncbi -v ${PWD}/Run:/home/data -v /disk0/sm/microbiome/16S/1013_park/fastq:/work/raw_data -e META_DATA=/disk0/sm/microbiome/16S/1013_park/file_list.tsv sm:qiime_0.1
+# CMD ["/bin/bash"]
+# docker build -f Dockerfile.qiime -t sm:qiime_0.1 .
+
+# sm:qiime_0.2
+ENTRYPOINT [ "bash", "/work/module/main.sh"]
+# docker build -f Dockerfile.qiime -t sm:qiime_0.2 .

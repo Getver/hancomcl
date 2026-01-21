@@ -1,0 +1,80 @@
+key	value	info
+CT	CST_type	미생물 분포에 따른 타입
+TR	total_rate	미생물 분포
+G	기타	그 외 미생물
+B	유익균	유익균(유산균 포함)
+H	유해균	유해균
+DS	disease_score	질환 별 건강 점수
+CST	CST	전반적인 건강 점수
+REP	난임	생식 능력 점수
+PRG	조산	조산 점수
+VAG	질염	질 건강도 점수
+STI	성병	성병 건강 점수
+HPV	자궁 암	자궁암 점수
+UTI	요로 감염	요로감염 점수
+MIS	유산	유산 점수
+MNP	폐경 증후군	폐경 점수
+arAB	antibiotic_abundance	항생제와 관련된 미생물 풍부도
+arT	TETRACYCLINE	테트라사이클린
+arM	MACROLIDE	마크롤라이드
+arL	BETA-LACTAM	베타 락탐
+arQ	QUINOLONE	퀴놀론
+AB	abundance	미생물 별 풍부도
+AV	AVsum	호기성 미생물의 풍부도 합
+BV	BVsum	세균성 질염균의 풍부도 합
+Lac	Lactobacillus	락토바실러스
+LacC	Lactobacillus crispatus	락토바실러스 크리스파투스
+LacG	Lactobacillus gasseri	락토바실러스 가세리
+LacI	Lactobacillus iners	락토바실러스 이너스
+LacJ	Lactobacillus jensenii	락토바실러스 옌세니이
+Gar	Gardnerella	가드네렐라균
+GarV	Gardnerella vaginalis	가드네렐라 바지날리스
+Pre	Prevotella	프레보텔라균
+PreB	Prevotella bivia	프레보텔라 비비아
+PreM	Prevotella melaninogenica	프레보텔라 멜라닌로게니카
+Ato	Atopobium	아토포비움균
+Fan	Fannyhessea	패니헤세아
+FanV	Fannyhessea vaginae	패니헤세아 바지나이
+Mob	Mobiluncus	모빌룬쿠스균
+Esc	Escherichia	대장균속
+EscC	Escherichia coli	대장균
+Ent	Enterococcus	장구균속
+Sta	Staphylococcus	포도상구균속
+StaA	Staphylococcus aureus	황색포도상구균
+StaE	Staphylococcus epidermidis	표피포도상구균
+StaS	Staphylococcus saprophyticus	부생포도상구균
+Str	Streptococcus	연쇄상구균속
+StrA	Streptococcus agalactiae	B군 연쇄상구균
+Bif	Bifidobacterium	비피도박테리움
+Meg	Megasphaera	메가스페라균
+Sne	Sneathia	스니시아균
+SneS	Sneathia sanguinegens	스니시아 상귀네겐스
+Vei	Veillonella	베일로넬라균
+VeiM	Veillonella montpellierensis	베일로넬라 몽펠리에렌시스
+Egg	Eggerthella	에거텔라균
+Fus	Fusobacterium	퓨소박테리움균
+Par	Parvimonas	파르비모나스균
+Por	Porphyromonas	포르피로모나스균
+Pse	Pseudomonas	녹농균속
+PseA	Pseudomonas aeruginosa	녹농균
+Ure	Ureaplasma	유레아플라스마
+UreU	Ureaplasma urealyticum	유레아플라스마 유레알리티쿰
+Myc	Mycoplasma	마이코플라스마
+MycG	Mycoplasmoides genitalium	마이코플라스마 제니탈리움
+MetH	Metamycoplasma hominis	마이코플라스마 호미니스
+Bac	Bacteroides	박테로이데스균
+Dia	Dialister	디알리스터균
+Pep	Peptoniphilus	펩토니필루스균
+Fin	Finegoldia	파인골디아균
+Cor	Corynebacterium	코리네박테리움균
+Act	Actinomyces	방선균
+Aer	Aerococcus	에어로코커스균
+Tre	Treponema	트레포네마균
+TreP	Treponema pallidum	매독균
+Nei	Neisseria	나이세리아균
+NeiG	Neisseria gonorrhoeae	임질균
+Chl	Chlamydia	클라미디아균
+ChlT	Chlamydia trachomatis	클라미디아 트라코마티스
+Tri	Trichomonas	트리코모나스
+TriB	Trichomonas vaginalis	트리코모나스 바지날리스
+Can	Candida 	칸디다균

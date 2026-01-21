@@ -1,0 +1,81 @@
+index	rank	name_txt	min	max	CST	난임	조산	질염	성병	자궁 암	요로 감염	유산	폐경 증후군	항생제 내성
+0	genus	Lactobacillus	18.8	85.766	-	-	-	-	-	-	-	-	-	
+1	species	Lactobacillus crispatus	1.319265457	41.52215679	-	-	-	-	-	-	-	-	-	
+2	species	Lactobacillus gasseri	0	22.95	-	-	-	-	-	-	-	-	-	
+3	species	Lactobacillus iners	4.094439122	28.63258615	-	-	+	-	+	+	-	-	+	
+4	species	Lactobacillus jensenii	0	21.54	-		-	-	-	-	-	-	-	
+5	genus	Gardnerella	2.72	28.69147	+	+	+	+	+	+	+	+	+	MACROLIDE;TETRACYCLINE
+6	species	Gardnerella vaginalis	4.527825332	4.527825332	+	+	+			+	+			
+7	genus	Prevotella	0.407069867	19.90960961	+	+	+	+	+		+		+	MACROLIDE;TETRACYCLINE
+8	species	Prevotella bivia	0.000736923	0.136412647	+	+			+					
+9	species	Prevotella melaninogenica	0.082031176	0.940499231	+				+					
+10	genus	Atopobium	0.17	16.81390462	+	+	+	+	+	+	+	+	+	MACROLIDE;TETRACYCLINE
+	genus	Fannyhessea	0.17	16.81390462	+	+	+	+	+	+	+	+	+	
+11	species	Fannyhessea vaginae	2.81325904	3.679494411	+	+	+	+		+				
+12	genus	Mobiluncus	0.004038235	1.537053077	+	+			+				+	
+13	genus	Escherichia	0	3.253127884	+	+		+			+	+	+	
+14	species	Escherichia coli	0	2.275422353	+			+			+			
+15	genus	Enterococcus	0	0.335	+	+		+					+	
+16	genus	Staphylococcus	0.2	0.608365936	+	+		+			+	+	+	BETA-LACTAM;QUINOLONE;TETRACYCLINE
+17	species	Staphylococcus aureus	0	0	+	+		+			+			
+18	species	Staphylococcus epidermidis	0	0	+						+			
+19	species	Staphylococcus saprophyticus	0	0	+									
+20	genus	Streptococcus	0	8.21467029	+	+	+	+			+		+	BETA-LACTAM
+21	species	Streptococcus agalactiae	0	0	+		+	+			+			BETA-LACTAM
+22	genus	Bifidobacterium	0	1.971208081	-		-							
+23	genus	Megasphaera	0.06	9.886650127	+	+			+	+			+	TETRACYCLINE
+24	genus	Sneathia	0.000132059	7.76	+				+	+			+	
+25	species	Sneathia sanguinegens	0	0	+				+					
+26	genus	Veillonella	0	1.043867296	+	+			+					
+27	species	Veillonella montpellierensis	0	0.000444706	+				+					
+28	genus	Eggerthella	0.02	2.233221686	+				+					
+29	genus	Fusobacterium	0.02	0.173703955	+					+				
+30	genus	Parvimonas	0.02	1.469245956	+				+					
+31	genus	Porphyromonas	0.03	1.442159778	+					+				
+32	genus	Pseudomonas	0	1	+									BETA-LACTAM;QUINOLONE
+33	species	Pseudomonas aeruginosa	0	0	+									BETA-LACTAM;QUINOLONE
+34	genus	Ureaplasma	0.069168539	0.44	+		+				+	+		
+35	species	Ureaplasma urealyticum	0	0	+						+	+		
+36	genus	Mycoplasma	0.01	1.78649693	+	+			+			+		
+37	species	Mycoplasmoides genitalium	0	0	+									
+38	species	Metamycoplasma hominis	0.002436471	0.003853846	+	+			+			+		
+39	genus	Bacteroides	0	0.86	+							+		
+40	genus	Dialister	0.002730882	4.394870908	+								+	
+41	genus	Peptoniphilus	0.016	2.623064301	+								+	
+42	genus	Finegoldia	0.069	2.639857451	+								+	
+43	genus	Corynebacterium	0.04	0.771213395	+								+	
+44	genus	Actinomyces	0.002	0.046	+									
+45	genus	Aerococcus	0.03	2.06	+									
+46	genus	Treponema	0	1	+									
+47	species	Treponema pallidum	0	0	+									
+48	genus	Neisseria	0	1	+									BETA-LACTAM;MACROLIDE;QUINOLONE;TETRACYCLINE
+49	species	Neisseria gonorrhoeae	0	0.002435648	+									BETA-LACTAM;MACROLIDE;QUINOLONE;TETRACYCLINE
+50	genus	Chlamydia	0	1	+			+						
+51	species	Chlamydia trachomatis	0	9.229761538	+			+						
+52	genus	Trichomonas	0	1	+			+						
+53	species	Trichomonas vaginalis	0	0	+			+						
+54	genus	Candida 	0	0.001	+			+						
+55	species	Human papillomavirus	0	0										
+56	no rank	Human immunodeficiency virus 1	0	0										
+57	species	Herpes simplex virus unknown type	0	0										
+58	no rank	Human herpesvirus 2 strain 186	0	0										
+59	no rank	Human herpesvirus 2 strain 333	0	0										
+60	no rank	Human herpesvirus 2 strain G	0	0										
+61	no rank	Human herpesvirus 2 strain HG52	0	0										
+62	no rank	Human herpesvirus 2 strain SA8	0	0										
+63	genus	Leptotrichia	0	1										
+64	genus	Roseburia	0	3.51										
+65	genus	Clostridium	0	2.14										
+66	genus	Coprococcus	0	0.61										
+67	genus	Oscillospira	0.58	0.65										
+68	genus	Ruminococcus	0.01	0.56										
+69	genus	Haemophilus	0	0.047815609										
+70	genus	Peptostreptococcus	0.03	0.702053486										
+71	genus	Gemella	0	0.353439298										
+72	genus	Acidovorax	0.001	0.016										
+73	genus	Sphingobacterium	0	0.006										
+74	genus	Aquabacterium	0	0.003										
+75	genus	Nitrospira	0	0.002										
+76	genus	Nordella	0	0.022										
+77	genus	Gordonia	0	0.001										
+78	genus	Microlunatus	0	1										

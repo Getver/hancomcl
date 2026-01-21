@@ -1,0 +1,1727 @@
+{
+  "ERR1761570": {
+    "info": {
+      "CT": "CST1",
+      "TR": {
+        "G": 0.97,
+        "B": 0.0,
+        "H": 0.03
+      },
+      "DS": {
+        "CST": {
+          "score": 85.0,
+          "percentile": 69.5
+        },
+        "REP": {
+          "score": 94.0,
+          "percentile": 100.0
+        },
+        "PRG": {
+          "score": 94.0,
+          "percentile": 76.4
+        },
+        "VAG": {
+          "score": 94.0,
+          "percentile": 100.0
+        },
+        "STI": {
+          "score": 94.0,
+          "percentile": 97.4
+        },
+        "HPV": {
+          "score": 95.0,
+          "percentile": 100.0
+        },
+        "UTI": {
+          "score": 94.0,
+          "percentile": 79.0
+        },
+        "MIS": {
+          "score": 95.0,
+          "percentile": 100.0
+        },
+        "MNP": {
+          "score": 82.0,
+          "percentile": 69.0
+        }
+      },
+      "arAB": {
+        "arL": 0.0,
+        "arM": 0.0,
+        "arT": 0.0
+      },
+      "AB": {
+        "Lac": 0.0,
+        "LacC": 0.0,
+        "LacG": 0.0,
+        "LacI": 0.0,
+        "LacJ": 0.0,
+        "OLac": 0.0,
+        "Str": 0.0,
+        "Ato": 0.0,
+        "Fan": 0.0,
+        "Gar": 0.0,
+        "Mob": 0.0,
+        "Sne": 0.0,
+        "Cor": 0.0291,
+        "Fin": 0.0,
+        "Fus": 0.0,
+        "Par": 0.0,
+        "Por": 0.0,
+        "Bif": 0.0,
+        "AV": 0.0,
+        "BV": 0.0
+      }
+    }
+  },
+  "ERR1761571": {
+    "info": {
+      "CT": "CST4-BV",
+      "TR": {
+        "G": 0.01,
+        "B": 0.0,
+        "H": 0.99
+      },
+      "DS": {
+        "CST": {
+          "score": 53.0,
+          "percentile": 34.0
+        },
+        "REP": {
+          "score": 52.0,
+          "percentile": 34.8
+        },
+        "PRG": {
+          "score": 48.0,
+          "percentile": 34.3
+        },
+        "VAG": {
+          "score": 48.0,
+          "percentile": 27.9
+        },
+        "STI": {
+          "score": 54.0,
+          "percentile": 37.1
+        },
+        "HPV": {
+          "score": 55.0,
+          "percentile": 35.5
+        },
+        "UTI": {
+          "score": 48.0,
+          "percentile": 28.1
+        },
+        "MIS": {
+          "score": 43.0,
+          "percentile": 10.2
+        },
+        "MNP": {
+          "score": 48.0,
+          "percentile": 31.9
+        }
+      },
+      "arAB": {
+        "arM": 0.9344,
+        "arT": 0.9344,
+        "arL": 0.0
+      },
+      "AB": {
+        "Lac": 0.0,
+        "LacC": 0.0,
+        "LacG": 0.0,
+        "LacI": 0.0,
+        "LacJ": 0.0,
+        "OLac": 0.0,
+        "Str": 0.0,
+        "Ato": 0.0,
+        "Fan": 0.0,
+        "Gar": 0.9344,
+        "Mob": 0.0,
+        "Sne": 0.0,
+        "Cor": 0.0512,
+        "Fin": 0.0,
+        "Fus": 0.0,
+        "Par": 0.0,
+        "Por": 0.0,
+        "Bif": 0.0,
+        "AV": 0.0,
+        "BV": 0.9344
+      }
+    }
+  },
+  "ERR1761573": {
+    "info": {
+      "CT": "CST1",
+      "TR": {
+        "G": 0.0,
+        "B": 0.99,
+        "H": 0.0
+      },
+      "DS": {
+        "CST": {
+          "score": 90.0,
+          "percentile": 71.4
+        },
+        "REP": {
+          "score": 94.0,
+          "percentile": 100.0
+        },
+        "PRG": {
+          "score": 94.0,
+          "percentile": 76.4
+        },
+        "VAG": {
+          "score": 94.0,
+          "percentile": 100.0
+        },
+        "STI": {
+          "score": 94.0,
+          "percentile": 97.4
+        },
+        "HPV": {
+          "score": 95.0,
+          "percentile": 100.0
+        },
+        "UTI": {
+          "score": 94.0,
+          "percentile": 79.0
+        },
+        "MIS": {
+          "score": 95.0,
+          "percentile": 100.0
+        },
+        "MNP": {
+          "score": 89.0,
+          "percentile": 71.7
+        }
+      },
+      "arAB": {
+        "arL": 0.0,
+        "arM": 0.0,
+        "arT": 0.0
+      },
+      "AB": {
+        "Lac": 0.0,
+        "LacC": 0.0,
+        "LacG": 0.0,
+        "LacI": 0.0,
+        "LacJ": 0.0,
+        "OLac": 0.0,
+        "Str": 0.0,
+        "Ato": 0.0,
+        "Fan": 0.0,
+        "Gar": 0.0,
+        "Mob": 0.0,
+        "Sne": 0.0,
+        "Cor": 0.0037,
+        "Fin": 0.0,
+        "Fus": 0.0,
+        "Par": 0.0,
+        "Por": 0.0,
+        "Bif": 0.9927,
+        "AV": 0.0,
+        "BV": 0.0
+      }
+    }
+  },
+  "ERR1761581": {
+    "info": {
+      "CT": "CST1",
+      "TR": {
+        "G": 0.0,
+        "B": 1.0,
+        "H": 0.0
+      },
+      "DS": {
+        "CST": {
+          "score": 94.0,
+          "percentile": 97.9
+        },
+        "REP": {
+          "score": 94.0,
+          "percentile": 100.0
+        },
+        "PRG": {
+          "score": 94.0,
+          "percentile": 76.4
+        },
+        "VAG": {
+          "score": 94.0,
+          "percentile": 100.0
+        },
+        "STI": {
+          "score": 94.0,
+          "percentile": 97.4
+        },
+        "HPV": {
+          "score": 95.0,
+          "percentile": 100.0
+        },
+        "UTI": {
+          "score": 94.0,
+          "percentile": 79.0
+        },
+        "MIS": {
+          "score": 95.0,
+          "percentile": 100.0
+        },
+        "MNP": {
+          "score": 94.0,
+          "percentile": 100.0
+        }
+      },
+      "arAB": {
+        "arL": 0.0,
+        "arM": 0.0,
+        "arT": 0.0
+      },
+      "AB": {
+        "Lac": 0.0,
+        "LacC": 0.0,
+        "LacG": 0.0,
+        "LacI": 0.0,
+        "LacJ": 0.0,
+        "OLac": 0.0,
+        "Str": 0.0,
+        "Ato": 0.0,
+        "Fan": 0.0,
+        "Gar": 0.0,
+        "Mob": 0.0,
+        "Sne": 0.0,
+        "Cor": 0.0,
+        "Fin": 0.0,
+        "Fus": 0.0,
+        "Par": 0.0,
+        "Por": 0.0,
+        "Bif": 1.0,
+        "AV": 0.0,
+        "BV": 0.0
+      }
+    }
+  },
+  "ERR1761582": {
+    "info": {
+      "CT": "CST1",
+      "TR": {
+        "G": 0.0,
+        "B": 1.0,
+        "H": 0.0
+      },
+      "DS": {
+        "CST": {
+          "score": 94.0,
+          "percentile": 97.9
+        },
+        "REP": {
+          "score": 94.0,
+          "percentile": 100.0
+        },
+        "PRG": {
+          "score": 94.0,
+          "percentile": 76.4
+        },
+        "VAG": {
+          "score": 94.0,
+          "percentile": 100.0
+        },
+        "STI": {
+          "score": 94.0,
+          "percentile": 97.4
+        },
+        "HPV": {
+          "score": 95.0,
+          "percentile": 100.0
+        },
+        "UTI": {
+          "score": 94.0,
+          "percentile": 79.0
+        },
+        "MIS": {
+          "score": 95.0,
+          "percentile": 100.0
+        },
+        "MNP": {
+          "score": 94.0,
+          "percentile": 100.0
+        }
+      },
+      "arAB": {
+        "arL": 0.0,
+        "arM": 0.0,
+        "arT": 0.0
+      },
+      "AB": {
+        "Lac": 0.0,
+        "LacC": 0.0,
+        "LacG": 0.0,
+        "LacI": 0.0,
+        "LacJ": 0.0,
+        "OLac": 0.0,
+        "Str": 0.0,
+        "Ato": 0.0,
+        "Fan": 0.0,
+        "Gar": 0.0,
+        "Mob": 0.0,
+        "Sne": 0.0,
+        "Cor": 0.0,
+        "Fin": 0.0,
+        "Fus": 0.0,
+        "Par": 0.0,
+        "Por": 0.0,
+        "Bif": 1.0,
+        "AV": 0.0,
+        "BV": 0.0
+      }
+    }
+  },
+  "ERR1761584": {
+    "info": {
+      "CT": "CST4-BV",
+      "TR": {
+        "G": 0.0,
+        "B": 0.0,
+        "H": 1.0
+      },
+      "DS": {
+        "CST": {
+          "score": 60.0,
+          "percentile": 40.2
+        },
+        "REP": {
+          "score": 52.0,
+          "percentile": 34.8
+        },
+        "PRG": {
+          "score": 48.0,
+          "percentile": 34.3
+        },
+        "VAG": {
+          "score": 48.0,
+          "percentile": 27.9
+        },
+        "STI": {
+          "score": 54.0,
+          "percentile": 37.1
+        },
+        "HPV": {
+          "score": 55.0,
+          "percentile": 35.5
+        },
+        "UTI": {
+          "score": 48.0,
+          "percentile": 28.1
+        },
+        "MIS": {
+          "score": 43.0,
+          "percentile": 10.2
+        },
+        "MNP": {
+          "score": 57.0,
+          "percentile": 38.8
+        }
+      },
+      "arAB": {
+        "arM": 1.0,
+        "arT": 1.0,
+        "arL": 0.0
+      },
+      "AB": {
+        "Lac": 0.0,
+        "LacC": 0.0,
+        "LacG": 0.0,
+        "LacI": 0.0,
+        "LacJ": 0.0,
+        "OLac": 0.0,
+        "Str": 0.0,
+        "Ato": 0.0,
+        "Fan": 0.0,
+        "Gar": 1.0,
+        "Mob": 0.0,
+        "Sne": 0.0,
+        "Cor": 0.0,
+        "Fin": 0.0,
+        "Fus": 0.0,
+        "Par": 0.0,
+        "Por": 0.0,
+        "Bif": 0.0,
+        "AV": 0.0,
+        "BV": 1.0
+      }
+    }
+  },
+  "ERR1761585": {
+    "info": {
+      "CT": "CST4-BV",
+      "TR": {
+        "G": 0.01,
+        "B": 0.0,
+        "H": 0.99
+      },
+      "DS": {
+        "CST": {
+          "score": 59.0,
+          "percentile": 39.8
+        },
+        "REP": {
+          "score": 51.0,
+          "percentile": 34.3
+        },
+        "PRG": {
+          "score": 48.0,
+          "percentile": 34.3
+        },
+        "VAG": {
+          "score": 48.0,
+          "percentile": 27.9
+        },
+        "STI": {
+          "score": 54.0,
+          "percentile": 37.1
+        },
+        "HPV": {
+          "score": 55.0,
+          "percentile": 35.5
+        },
+        "UTI": {
+          "score": 48.0,
+          "percentile": 28.1
+        },
+        "MIS": {
+          "score": 43.0,
+          "percentile": 10.2
+        },
+        "MNP": {
+          "score": 57.0,
+          "percentile": 38.8
+        }
+      },
+      "arAB": {
+        "arM": 0.9884,
+        "arT": 0.9884,
+        "arL": 0.0
+      },
+      "AB": {
+        "Lac": 0.0,
+        "LacC": 0.0,
+        "LacG": 0.0,
+        "LacI": 0.0,
+        "LacJ": 0.0,
+        "OLac": 0.0,
+        "Str": 0.0,
+        "Ato": 0.0055,
+        "Fan": 0.0,
+        "Gar": 0.9829,
+        "Mob": 0.0,
+        "Sne": 0.0,
+        "Cor": 0.0,
+        "Fin": 0.0,
+        "Fus": 0.0,
+        "Par": 0.0,
+        "Por": 0.0,
+        "Bif": 0.0,
+        "AV": 0.0,
+        "BV": 0.9884
+      }
+    }
+  },
+  "ERR1761587": {
+    "info": {
+      "CT": "CST4-AV",
+      "TR": {
+        "G": 0.97,
+        "B": 0.01,
+        "H": 0.03
+      },
+      "DS": {
+        "CST": {
+          "score": 60.0,
+          "percentile": 40.2
+        },
+        "REP": {
+          "score": 66.0,
+          "percentile": 63.6
+        },
+        "PRG": {
+          "score": 66.0,
+          "percentile": 56.7
+        },
+        "VAG": {
+          "score": 66.0,
+          "percentile": 63.8
+        },
+        "STI": {
+          "score": 65.0,
+          "percentile": 63.6
+        },
+        "HPV": {
+          "score": 67.0,
+          "percentile": 64.0
+        },
+        "UTI": {
+          "score": 66.0,
+          "percentile": 53.8
+        },
+        "MIS": {
+          "score": 67.0,
+          "percentile": 63.8
+        },
+        "MNP": {
+          "score": 57.0,
+          "percentile": 38.8
+        }
+      },
+      "arAB": {
+        "arL": 0.0002,
+        "arM": 0.0,
+        "arT": 0.0
+      },
+      "AB": {
+        "Lac": 0.0,
+        "LacC": 0.0,
+        "LacG": 0.0,
+        "LacI": 0.0,
+        "LacJ": 0.0,
+        "OLac": 0.0,
+        "Str": 0.0002,
+        "Ato": 0.0,
+        "Fan": 0.0,
+        "Gar": 0.0,
+        "Mob": 0.0,
+        "Sne": 0.0,
+        "Cor": 0.0271,
+        "Fin": 0.0002,
+        "Fus": 0.0,
+        "Par": 0.0,
+        "Por": 0.0,
+        "Bif": 0.0055,
+        "AV": 0.0002,
+        "BV": 0.0
+      }
+    }
+  },
+  "ERR1761588": {
+    "info": {
+      "CT": "CST1",
+      "TR": {
+        "G": 0.98,
+        "B": 0.0,
+        "H": 0.02
+      },
+      "DS": {
+        "CST": {
+          "score": 85.0,
+          "percentile": 69.5
+        },
+        "REP": {
+          "score": 94.0,
+          "percentile": 100.0
+        },
+        "PRG": {
+          "score": 94.0,
+          "percentile": 76.4
+        },
+        "VAG": {
+          "score": 94.0,
+          "percentile": 100.0
+        },
+        "STI": {
+          "score": 94.0,
+          "percentile": 97.4
+        },
+        "HPV": {
+          "score": 95.0,
+          "percentile": 100.0
+        },
+        "UTI": {
+          "score": 94.0,
+          "percentile": 79.0
+        },
+        "MIS": {
+          "score": 95.0,
+          "percentile": 100.0
+        },
+        "MNP": {
+          "score": 82.0,
+          "percentile": 69.0
+        }
+      },
+      "arAB": {
+        "arL": 0.0,
+        "arM": 0.0,
+        "arT": 0.0
+      },
+      "AB": {
+        "Lac": 0.0,
+        "LacC": 0.0,
+        "LacG": 0.0,
+        "LacI": 0.0,
+        "LacJ": 0.0,
+        "OLac": 0.0,
+        "Str": 0.0,
+        "Ato": 0.0,
+        "Fan": 0.0,
+        "Gar": 0.0,
+        "Mob": 0.0,
+        "Sne": 0.0,
+        "Cor": 0.0164,
+        "Fin": 0.0,
+        "Fus": 0.0,
+        "Par": 0.0,
+        "Por": 0.0,
+        "Bif": 0.0,
+        "AV": 0.0,
+        "BV": 0.0
+      }
+    }
+  },
+  "ERR1761595": {
+    "info": {
+      "CT": "CST4-BV",
+      "TR": {
+        "G": 0.01,
+        "B": 0.0,
+        "H": 0.99
+      },
+      "DS": {
+        "CST": {
+          "score": 58.0,
+          "percentile": 39.0
+        },
+        "REP": {
+          "score": 49.0,
+          "percentile": 31.2
+        },
+        "PRG": {
+          "score": 45.0,
+          "percentile": 28.3
+        },
+        "VAG": {
+          "score": 45.0,
+          "percentile": 18.6
+        },
+        "STI": {
+          "score": 51.0,
+          "percentile": 35.0
+        },
+        "HPV": {
+          "score": 52.0,
+          "percentile": 34.5
+        },
+        "UTI": {
+          "score": 45.0,
+          "percentile": 18.8
+        },
+        "MIS": {
+          "score": 38.0,
+          "percentile": 1.2
+        },
+        "MNP": {
+          "score": 55.0,
+          "percentile": 37.6
+        }
+      },
+      "arAB": {
+        "arM": 0.9476,
+        "arT": 0.9476,
+        "arL": 0.0
+      },
+      "AB": {
+        "Lac": 0.0,
+        "LacC": 0.0,
+        "LacG": 0.0,
+        "LacI": 0.0,
+        "LacJ": 0.0,
+        "OLac": 0.0,
+        "Str": 0.0,
+        "Ato": 0.0,
+        "Fan": 0.0405,
+        "Gar": 0.9476,
+        "Mob": 0.0,
+        "Sne": 0.0019,
+        "Cor": 0.0,
+        "Fin": 0.0,
+        "Fus": 0.0,
+        "Par": 0.0,
+        "Por": 0.0,
+        "Bif": 0.0,
+        "AV": 0.0,
+        "BV": 0.9901
+      }
+    }
+  },
+  "ERR1761596": {
+    "info": {
+      "CT": "CST4-BV",
+      "TR": {
+        "G": 0.01,
+        "B": 0.0,
+        "H": 0.99
+      },
+      "DS": {
+        "CST": {
+          "score": 58.0,
+          "percentile": 39.0
+        },
+        "REP": {
+          "score": 48.0,
+          "percentile": 30.2
+        },
+        "PRG": {
+          "score": 44.0,
+          "percentile": 26.9
+        },
+        "VAG": {
+          "score": 44.0,
+          "percentile": 15.0
+        },
+        "STI": {
+          "score": 50.0,
+          "percentile": 34.3
+        },
+        "HPV": {
+          "score": 51.0,
+          "percentile": 34.0
+        },
+        "UTI": {
+          "score": 44.0,
+          "percentile": 16.2
+        },
+        "MIS": {
+          "score": 37.0,
+          "percentile": 1.0
+        },
+        "MNP": {
+          "score": 54.0,
+          "percentile": 37.1
+        }
+      },
+      "arAB": {
+        "arM": 0.9343,
+        "arT": 0.9343,
+        "arL": 0.0
+      },
+      "AB": {
+        "Lac": 0.0,
+        "LacC": 0.0,
+        "LacG": 0.0,
+        "LacI": 0.0,
+        "LacJ": 0.0,
+        "OLac": 0.0,
+        "Str": 0.0,
+        "Ato": 0.0,
+        "Fan": 0.0519,
+        "Gar": 0.9343,
+        "Mob": 0.0,
+        "Sne": 0.0029,
+        "Cor": 0.0,
+        "Fin": 0.0,
+        "Fus": 0.0,
+        "Par": 0.0,
+        "Por": 0.0,
+        "Bif": 0.0,
+        "AV": 0.0,
+        "BV": 0.9891
+      }
+    }
+  },
+  "ERR1761615": {
+    "info": {
+      "CT": "CST1",
+      "TR": {
+        "G": 0.04,
+        "B": 0.0,
+        "H": 0.96
+      },
+      "DS": {
+        "CST": {
+          "score": 85.0,
+          "percentile": 69.5
+        },
+        "REP": {
+          "score": 94.0,
+          "percentile": 100.0
+        },
+        "PRG": {
+          "score": 94.0,
+          "percentile": 76.4
+        },
+        "VAG": {
+          "score": 94.0,
+          "percentile": 100.0
+        },
+        "STI": {
+          "score": 94.0,
+          "percentile": 97.4
+        },
+        "HPV": {
+          "score": 95.0,
+          "percentile": 100.0
+        },
+        "UTI": {
+          "score": 94.0,
+          "percentile": 79.0
+        },
+        "MIS": {
+          "score": 95.0,
+          "percentile": 100.0
+        },
+        "MNP": {
+          "score": 82.0,
+          "percentile": 69.0
+        }
+      },
+      "arAB": {
+        "arL": 0.0,
+        "arM": 0.0,
+        "arT": 0.0
+      },
+      "AB": {
+        "Lac": 0.0,
+        "LacC": 0.0,
+        "LacG": 0.0,
+        "LacI": 0.0,
+        "LacJ": 0.0,
+        "OLac": 0.0,
+        "Str": 0.0,
+        "Ato": 0.0,
+        "Fan": 0.0,
+        "Gar": 0.0,
+        "Mob": 0.0,
+        "Sne": 0.0,
+        "Cor": 0.9569,
+        "Fin": 0.0,
+        "Fus": 0.0,
+        "Par": 0.0,
+        "Por": 0.0,
+        "Bif": 0.0,
+        "AV": 0.0,
+        "BV": 0.0
+      }
+    }
+  },
+  "ERR1761616": {
+    "info": {
+      "CT": "CST1",
+      "TR": {
+        "G": 0.83,
+        "B": 0.0,
+        "H": 0.17
+      },
+      "DS": {
+        "CST": {
+          "score": 85.0,
+          "percentile": 69.5
+        },
+        "REP": {
+          "score": 94.0,
+          "percentile": 100.0
+        },
+        "PRG": {
+          "score": 94.0,
+          "percentile": 76.4
+        },
+        "VAG": {
+          "score": 94.0,
+          "percentile": 100.0
+        },
+        "STI": {
+          "score": 94.0,
+          "percentile": 97.4
+        },
+        "HPV": {
+          "score": 95.0,
+          "percentile": 100.0
+        },
+        "UTI": {
+          "score": 94.0,
+          "percentile": 79.0
+        },
+        "MIS": {
+          "score": 95.0,
+          "percentile": 100.0
+        },
+        "MNP": {
+          "score": 82.0,
+          "percentile": 69.0
+        }
+      },
+      "arAB": {
+        "arL": 0.0,
+        "arM": 0.0,
+        "arT": 0.0
+      },
+      "AB": {
+        "Lac": 0.0,
+        "LacC": 0.0,
+        "LacG": 0.0,
+        "LacI": 0.0,
+        "LacJ": 0.0,
+        "OLac": 0.0,
+        "Str": 0.0,
+        "Ato": 0.0,
+        "Fan": 0.0,
+        "Gar": 0.0,
+        "Mob": 0.0,
+        "Sne": 0.0,
+        "Cor": 0.1709,
+        "Fin": 0.0,
+        "Fus": 0.0,
+        "Par": 0.0,
+        "Por": 0.0,
+        "Bif": 0.0,
+        "AV": 0.0,
+        "BV": 0.0
+      }
+    }
+  },
+  "ERR1761622": {
+    "info": {
+      "CT": "CST1",
+      "TR": {
+        "G": 0.34,
+        "B": 0.0,
+        "H": 0.66
+      },
+      "DS": {
+        "CST": {
+          "score": 85.0,
+          "percentile": 69.5
+        },
+        "REP": {
+          "score": 94.0,
+          "percentile": 100.0
+        },
+        "PRG": {
+          "score": 94.0,
+          "percentile": 76.4
+        },
+        "VAG": {
+          "score": 94.0,
+          "percentile": 100.0
+        },
+        "STI": {
+          "score": 94.0,
+          "percentile": 97.4
+        },
+        "HPV": {
+          "score": 95.0,
+          "percentile": 100.0
+        },
+        "UTI": {
+          "score": 94.0,
+          "percentile": 79.0
+        },
+        "MIS": {
+          "score": 95.0,
+          "percentile": 100.0
+        },
+        "MNP": {
+          "score": 82.0,
+          "percentile": 69.0
+        }
+      },
+      "arAB": {
+        "arL": 0.0,
+        "arM": 0.0,
+        "arT": 0.0
+      },
+      "AB": {
+        "Lac": 0.0,
+        "LacC": 0.0,
+        "LacG": 0.0,
+        "LacI": 0.0,
+        "LacJ": 0.0,
+        "OLac": 0.0,
+        "Str": 0.0,
+        "Ato": 0.0,
+        "Fan": 0.0,
+        "Gar": 0.0,
+        "Mob": 0.0,
+        "Sne": 0.0,
+        "Cor": 0.656,
+        "Fin": 0.0,
+        "Fus": 0.0,
+        "Par": 0.0,
+        "Por": 0.0,
+        "Bif": 0.0,
+        "AV": 0.0,
+        "BV": 0.0
+      }
+    }
+  },
+  "ERR1761631": {
+    "info": {
+      "CT": "CST4-BV",
+      "TR": {
+        "G": 0.29,
+        "B": 0.0,
+        "H": 0.71
+      },
+      "DS": {
+        "CST": {
+          "score": 59.0,
+          "percentile": 39.8
+        },
+        "REP": {
+          "score": 63.0,
+          "percentile": 43.1
+        },
+        "PRG": {
+          "score": 63.0,
+          "percentile": 46.4
+        },
+        "VAG": {
+          "score": 63.0,
+          "percentile": 43.1
+        },
+        "STI": {
+          "score": 64.0,
+          "percentile": 43.1
+        },
+        "HPV": {
+          "score": 65.0,
+          "percentile": 44.3
+        },
+        "UTI": {
+          "score": 63.0,
+          "percentile": 46.7
+        },
+        "MIS": {
+          "score": 63.0,
+          "percentile": 46.2
+        },
+        "MNP": {
+          "score": 56.0,
+          "percentile": 38.1
+        }
+      },
+      "arAB": {
+        "arM": 0.0494,
+        "arT": 0.0494,
+        "arL": 0.0
+      },
+      "AB": {
+        "Lac": 0.0,
+        "LacC": 0.0,
+        "LacG": 0.0,
+        "LacI": 0.0,
+        "LacJ": 0.0,
+        "OLac": 0.0,
+        "Str": 0.0,
+        "Ato": 0.0,
+        "Fan": 0.0,
+        "Gar": 0.0494,
+        "Mob": 0.0,
+        "Sne": 0.0,
+        "Cor": 0.6599,
+        "Fin": 0.0,
+        "Fus": 0.0,
+        "Par": 0.0,
+        "Por": 0.0,
+        "Bif": 0.0,
+        "AV": 0.0,
+        "BV": 0.0494
+      }
+    }
+  },
+  "ERR1761634": {
+    "info": {
+      "CT": "CST1",
+      "TR": {
+        "G": 0.99,
+        "B": 0.0,
+        "H": 0.01
+      },
+      "DS": {
+        "CST": {
+          "score": 85.0,
+          "percentile": 69.5
+        },
+        "REP": {
+          "score": 94.0,
+          "percentile": 100.0
+        },
+        "PRG": {
+          "score": 94.0,
+          "percentile": 76.4
+        },
+        "VAG": {
+          "score": 94.0,
+          "percentile": 100.0
+        },
+        "STI": {
+          "score": 94.0,
+          "percentile": 97.4
+        },
+        "HPV": {
+          "score": 78.0,
+          "percentile": 66.2
+        },
+        "UTI": {
+          "score": 94.0,
+          "percentile": 79.0
+        },
+        "MIS": {
+          "score": 95.0,
+          "percentile": 100.0
+        },
+        "MNP": {
+          "score": 94.0,
+          "percentile": 100.0
+        }
+      },
+      "arAB": {
+        "arL": 0.0,
+        "arM": 0.0,
+        "arT": 0.0
+      },
+      "AB": {
+        "Lac": 0.0,
+        "LacC": 0.0,
+        "LacG": 0.0,
+        "LacI": 0.0,
+        "LacJ": 0.0,
+        "OLac": 0.0,
+        "Str": 0.0,
+        "Ato": 0.0,
+        "Fan": 0.0,
+        "Gar": 0.0,
+        "Mob": 0.0,
+        "Sne": 0.0,
+        "Cor": 0.0,
+        "Fin": 0.0,
+        "Fus": 0.013,
+        "Par": 0.0,
+        "Por": 0.0,
+        "Bif": 0.0,
+        "AV": 0.0,
+        "BV": 0.0
+      }
+    }
+  },
+  "ERR1761637": {
+    "info": {
+      "CT": "CST1",
+      "TR": {
+        "G": 0.17,
+        "B": 0.0,
+        "H": 0.82
+      },
+      "DS": {
+        "CST": {
+          "score": 76.0,
+          "percentile": 66.2
+        },
+        "REP": {
+          "score": 94.0,
+          "percentile": 100.0
+        },
+        "PRG": {
+          "score": 94.0,
+          "percentile": 76.4
+        },
+        "VAG": {
+          "score": 94.0,
+          "percentile": 100.0
+        },
+        "STI": {
+          "score": 94.0,
+          "percentile": 97.4
+        },
+        "HPV": {
+          "score": 78.0,
+          "percentile": 66.2
+        },
+        "UTI": {
+          "score": 94.0,
+          "percentile": 79.0
+        },
+        "MIS": {
+          "score": 95.0,
+          "percentile": 100.0
+        },
+        "MNP": {
+          "score": 82.0,
+          "percentile": 69.0
+        }
+      },
+      "arAB": {
+        "arL": 0.0,
+        "arM": 0.0,
+        "arT": 0.0
+      },
+      "AB": {
+        "Lac": 0.0,
+        "LacC": 0.0,
+        "LacG": 0.0,
+        "LacI": 0.0,
+        "LacJ": 0.0,
+        "OLac": 0.0,
+        "Str": 0.0,
+        "Ato": 0.0,
+        "Fan": 0.0,
+        "Gar": 0.0,
+        "Mob": 0.0,
+        "Sne": 0.0,
+        "Cor": 0.8187,
+        "Fin": 0.0,
+        "Fus": 0.0026,
+        "Par": 0.0,
+        "Por": 0.0,
+        "Bif": 0.0048,
+        "AV": 0.0,
+        "BV": 0.0
+      }
+    }
+  },
+  "ERR1761638": {
+    "info": {
+      "CT": "CST4-BV",
+      "TR": {
+        "G": 0.0,
+        "B": 0.0,
+        "H": 1.0
+      },
+      "DS": {
+        "CST": {
+          "score": 60.0,
+          "percentile": 40.2
+        },
+        "REP": {
+          "score": 52.0,
+          "percentile": 34.8
+        },
+        "PRG": {
+          "score": 48.0,
+          "percentile": 34.3
+        },
+        "VAG": {
+          "score": 48.0,
+          "percentile": 27.9
+        },
+        "STI": {
+          "score": 54.0,
+          "percentile": 37.1
+        },
+        "HPV": {
+          "score": 55.0,
+          "percentile": 35.5
+        },
+        "UTI": {
+          "score": 48.0,
+          "percentile": 28.1
+        },
+        "MIS": {
+          "score": 43.0,
+          "percentile": 10.2
+        },
+        "MNP": {
+          "score": 57.0,
+          "percentile": 38.8
+        }
+      },
+      "arAB": {
+        "arM": 1.0,
+        "arT": 1.0,
+        "arL": 0.0
+      },
+      "AB": {
+        "Lac": 0.0,
+        "LacC": 0.0,
+        "LacG": 0.0,
+        "LacI": 0.0,
+        "LacJ": 0.0,
+        "OLac": 0.0,
+        "Str": 0.0,
+        "Ato": 0.0,
+        "Fan": 0.0,
+        "Gar": 1.0,
+        "Mob": 0.0,
+        "Sne": 0.0,
+        "Cor": 0.0,
+        "Fin": 0.0,
+        "Fus": 0.0,
+        "Par": 0.0,
+        "Por": 0.0,
+        "Bif": 0.0,
+        "AV": 0.0,
+        "BV": 1.0
+      }
+    }
+  },
+  "ERR1761639": {
+    "info": {
+      "CT": "CST4-BV",
+      "TR": {
+        "G": 0.0,
+        "B": 0.0,
+        "H": 1.0
+      },
+      "DS": {
+        "CST": {
+          "score": 60.0,
+          "percentile": 40.2
+        },
+        "REP": {
+          "score": 52.0,
+          "percentile": 34.8
+        },
+        "PRG": {
+          "score": 48.0,
+          "percentile": 34.3
+        },
+        "VAG": {
+          "score": 48.0,
+          "percentile": 27.9
+        },
+        "STI": {
+          "score": 54.0,
+          "percentile": 37.1
+        },
+        "HPV": {
+          "score": 55.0,
+          "percentile": 35.5
+        },
+        "UTI": {
+          "score": 48.0,
+          "percentile": 28.1
+        },
+        "MIS": {
+          "score": 43.0,
+          "percentile": 10.2
+        },
+        "MNP": {
+          "score": 57.0,
+          "percentile": 38.8
+        }
+      },
+      "arAB": {
+        "arM": 1.0,
+        "arT": 1.0,
+        "arL": 0.0
+      },
+      "AB": {
+        "Lac": 0.0,
+        "LacC": 0.0,
+        "LacG": 0.0,
+        "LacI": 0.0,
+        "LacJ": 0.0,
+        "OLac": 0.0,
+        "Str": 0.0,
+        "Ato": 0.0,
+        "Fan": 0.0,
+        "Gar": 1.0,
+        "Mob": 0.0,
+        "Sne": 0.0,
+        "Cor": 0.0,
+        "Fin": 0.0,
+        "Fus": 0.0,
+        "Par": 0.0,
+        "Por": 0.0,
+        "Bif": 0.0,
+        "AV": 0.0,
+        "BV": 1.0
+      }
+    }
+  },
+  "ERR1761641": {
+    "info": {
+      "CT": "CST4-BV",
+      "TR": {
+        "G": 0.0,
+        "B": 0.0,
+        "H": 1.0
+      },
+      "DS": {
+        "CST": {
+          "score": 60.0,
+          "percentile": 40.2
+        },
+        "REP": {
+          "score": 52.0,
+          "percentile": 34.8
+        },
+        "PRG": {
+          "score": 48.0,
+          "percentile": 34.3
+        },
+        "VAG": {
+          "score": 48.0,
+          "percentile": 27.9
+        },
+        "STI": {
+          "score": 54.0,
+          "percentile": 37.1
+        },
+        "HPV": {
+          "score": 55.0,
+          "percentile": 35.5
+        },
+        "UTI": {
+          "score": 48.0,
+          "percentile": 28.1
+        },
+        "MIS": {
+          "score": 43.0,
+          "percentile": 10.2
+        },
+        "MNP": {
+          "score": 57.0,
+          "percentile": 38.8
+        }
+      },
+      "arAB": {
+        "arM": 1.0,
+        "arT": 1.0,
+        "arL": 0.0
+      },
+      "AB": {
+        "Lac": 0.0,
+        "LacC": 0.0,
+        "LacG": 0.0,
+        "LacI": 0.0,
+        "LacJ": 0.0,
+        "OLac": 0.0,
+        "Str": 0.0,
+        "Ato": 0.0,
+        "Fan": 0.0,
+        "Gar": 1.0,
+        "Mob": 0.0,
+        "Sne": 0.0,
+        "Cor": 0.0,
+        "Fin": 0.0,
+        "Fus": 0.0,
+        "Par": 0.0,
+        "Por": 0.0,
+        "Bif": 0.0,
+        "AV": 0.0,
+        "BV": 1.0
+      }
+    }
+  },
+  "ERR1761653": {
+    "info": {
+      "CT": "CST1",
+      "TR": {
+        "G": 0.96,
+        "B": 0.0,
+        "H": 0.04
+      },
+      "DS": {
+        "CST": {
+          "score": 85.0,
+          "percentile": 69.5
+        },
+        "REP": {
+          "score": 94.0,
+          "percentile": 100.0
+        },
+        "PRG": {
+          "score": 94.0,
+          "percentile": 76.4
+        },
+        "VAG": {
+          "score": 94.0,
+          "percentile": 100.0
+        },
+        "STI": {
+          "score": 94.0,
+          "percentile": 97.4
+        },
+        "HPV": {
+          "score": 95.0,
+          "percentile": 100.0
+        },
+        "UTI": {
+          "score": 94.0,
+          "percentile": 79.0
+        },
+        "MIS": {
+          "score": 95.0,
+          "percentile": 100.0
+        },
+        "MNP": {
+          "score": 82.0,
+          "percentile": 69.0
+        }
+      },
+      "arAB": {
+        "arL": 0.0,
+        "arM": 0.0,
+        "arT": 0.0
+      },
+      "AB": {
+        "Lac": 0.0,
+        "LacC": 0.0,
+        "LacG": 0.0,
+        "LacI": 0.0,
+        "LacJ": 0.0,
+        "OLac": 0.0,
+        "Str": 0.0,
+        "Ato": 0.0,
+        "Fan": 0.0,
+        "Gar": 0.0,
+        "Mob": 0.0,
+        "Sne": 0.0,
+        "Cor": 0.0379,
+        "Fin": 0.0,
+        "Fus": 0.0,
+        "Par": 0.0,
+        "Por": 0.0,
+        "Bif": 0.0,
+        "AV": 0.0,
+        "BV": 0.0
+      }
+    }
+  },
+  "ERR1761654": {
+    "info": {
+      "CT": "CST4-BV",
+      "TR": {
+        "G": 0.02,
+        "B": 0.0,
+        "H": 0.98
+      },
+      "DS": {
+        "CST": {
+          "score": 52.0,
+          "percentile": 33.1
+        },
+        "REP": {
+          "score": 51.0,
+          "percentile": 34.3
+        },
+        "PRG": {
+          "score": 48.0,
+          "percentile": 34.3
+        },
+        "VAG": {
+          "score": 48.0,
+          "percentile": 27.9
+        },
+        "STI": {
+          "score": 52.0,
+          "percentile": 35.2
+        },
+        "HPV": {
+          "score": 42.0,
+          "percentile": 27.4
+        },
+        "UTI": {
+          "score": 48.0,
+          "percentile": 28.1
+        },
+        "MIS": {
+          "score": 42.0,
+          "percentile": 8.1
+        },
+        "MNP": {
+          "score": 56.0,
+          "percentile": 38.1
+        }
+      },
+      "arAB": {
+        "arM": 0.9575,
+        "arT": 0.9575,
+        "arL": 0.0
+      },
+      "AB": {
+        "Lac": 0.0,
+        "LacC": 0.0,
+        "LacG": 0.0,
+        "LacI": 0.0,
+        "LacJ": 0.0,
+        "OLac": 0.0,
+        "Str": 0.0,
+        "Ato": 0.0006,
+        "Fan": 0.0061,
+        "Gar": 0.9569,
+        "Mob": 0.0,
+        "Sne": 0.0047,
+        "Cor": 0.0,
+        "Fin": 0.0,
+        "Fus": 0.0078,
+        "Par": 0.0007,
+        "Por": 0.0003,
+        "Bif": 0.0,
+        "AV": 0.0,
+        "BV": 0.9683
+      }
+    }
+  },
+  "ERR1761655": {
+    "info": {
+      "CT": "CST4-BV",
+      "TR": {
+        "G": 0.14,
+        "B": 0.0,
+        "H": 0.86
+      },
+      "DS": {
+        "CST": {
+          "score": 53.0,
+          "percentile": 34.0
+        },
+        "REP": {
+          "score": 64.0,
+          "percentile": 44.5
+        },
+        "PRG": {
+          "score": 64.0,
+          "percentile": 48.3
+        },
+        "VAG": {
+          "score": 64.0,
+          "percentile": 44.0
+        },
+        "STI": {
+          "score": 64.0,
+          "percentile": 43.1
+        },
+        "HPV": {
+          "score": 54.0,
+          "percentile": 35.0
+        },
+        "UTI": {
+          "score": 64.0,
+          "percentile": 47.4
+        },
+        "MIS": {
+          "score": 64.0,
+          "percentile": 47.1
+        },
+        "MNP": {
+          "score": 56.0,
+          "percentile": 38.1
+        }
+      },
+      "arAB": {
+        "arM": 0.0299,
+        "arT": 0.0299,
+        "arL": 0.0
+      },
+      "AB": {
+        "Lac": 0.0,
+        "LacC": 0.0,
+        "LacG": 0.0,
+        "LacI": 0.0,
+        "LacJ": 0.0,
+        "OLac": 0.0,
+        "Str": 0.0,
+        "Ato": 0.0,
+        "Fan": 0.0,
+        "Gar": 0.0299,
+        "Mob": 0.0,
+        "Sne": 0.0,
+        "Cor": 0.8234,
+        "Fin": 0.0,
+        "Fus": 0.0081,
+        "Par": 0.0,
+        "Por": 0.0,
+        "Bif": 0.0,
+        "AV": 0.0,
+        "BV": 0.0299
+      }
+    }
+  }
+}
